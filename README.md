@@ -45,6 +45,7 @@ I welcome contributions! Feel free to fork the repository and submit pull reques
 
 │   └── script.js
 
+
 ├── BMICalculator
 
 │   ├── index.html
@@ -52,6 +53,7 @@ I welcome contributions! Feel free to fork the repository and submit pull reques
 │   ├── style.css
 
 │   └── script.js
+
 
 ├── DigitalClock
 
@@ -61,6 +63,7 @@ I welcome contributions! Feel free to fork the repository and submit pull reques
 
 │   └── script.js
 
+
 ├── SmartWatch
 
 │   ├── index.html
@@ -68,6 +71,7 @@ I welcome contributions! Feel free to fork the repository and submit pull reques
 │   ├── style.css
 
 │   └── script.js
+
 
 ├── GuessTheNumber
 
