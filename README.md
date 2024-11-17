@@ -38,23 +38,35 @@ Contributing
 I welcome contributions! Feel free to fork the repository and submit pull requests. For major changes, please open an issue to discuss what you would like to change.
 
 ├── ColorChanger
+
 │   ├── index.html
+
 │   ├── style.css
+
 │   └── script.js
 
 ├── BMICalculator
+
 │   ├── index.html
+
 │   ├── style.css
+
 │   └── script.js
 
 ├── DigitalClock
+
 │   ├── index.html
+
 │   ├── style.css
+
 │   └── script.js
 
 ├── SmartWatch
+
 │   ├── index.html
+
 │   ├── style.css
+
 │   └── script.js
 
 ├── GuessTheNumber
