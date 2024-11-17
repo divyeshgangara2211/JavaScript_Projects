@@ -37,6 +37,9 @@ JavaScript
 Contributing
 I welcome contributions! Feel free to fork the repository and submit pull requests. For major changes, please open an issue to discuss what you would like to change.
 
+The repository is organized as follows:
+
+
 ├── ColorChanger
 
 │   ├── index.html
