@@ -70,7 +70,10 @@ I welcome contributions! Feel free to fork the repository and submit pull reques
 │   └── script.js
 
 ├── GuessTheNumber
+
 │   ├── index.html
+
 │   ├── style.css
+
 │   └── script.js
 
