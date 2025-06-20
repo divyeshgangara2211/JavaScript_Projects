@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Divyesh Gangera's Web sites</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    setTimeout(() => {
+        console.log("Divyesh");
+    }, 2000);
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = " Chai Aur code"
+    }
+
+    const changeme = setTimeout(changeText , 2000);
+
+    document.querySelector('#stop').addEventListener('click' , function(){
+        clearTimeout(changeme);
+        console.log("Stopped")
+    })
+
+    const currenttime = new Date();
+    const getHours = currenttime.getHours();
+    const getMint = currenttime.getMinutes();
+    const getSec = currenttime.getSeconds();
+
+    let  formated  = setInterval(function(){
+        console.log(`${getHours}:${getMint}:${getSec}`); 
+    }, 1000);
+
+    const print = console.log(`current time : ${formated}`);
+
+    let  Timee = setInterval(() => {
+        const time = currenttime.toLocaleTimeString();
+        console.log(time);
+    },1000);
+    clearInterval(Timee);
+
+    const sayDate = function(str){
+        console.log(str )
+    };
+    let set;
+
+    document.querySelector('#start').addEventListener('click',function(){
+        set = setInterval(sayDate, 2000 , 'helooooo');
+        console.log("Start");
+    });
+
+    document.querySelector('#stop').addEventListener('click',function(){
+          clearInterval(set);
+        
+          console.log("Stopped");
+    });
+
+    console.log(formated)
+
+</script> 
+   
+</html>
