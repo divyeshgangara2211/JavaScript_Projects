@@ -1,0 +1,141 @@
+/* Project Container - Animated Background */
+.project {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    animation: backgroundMove 8s infinite alternate ease-in-out;
+}
+
+/* Background Gradient Animation */
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Key Press Display Box - Enlarged */
+.details {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 40px;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffeb3b;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+    animation: popUp 0.6s ease-in-out;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Pop-Up Effect for Box */
+@keyframes popUp {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+/* Bouncing Key Effect (Without Rotation) */
+.bounce {
+    display: inline-block;
+    animation: bounce 0.6s ease infinite alternate;
+}
+
+/* Key Bounce Animation */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Bounce Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Rotate Animation */
+@keyframes rotateKey {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Emoji Confetti */
+.emoji {
+    position: absolute;
+    font-size: 3rem;
+    animation: floatUp 2s ease-out forwards;
+}
+
+/* Floating Emoji Animation */
+@keyframes floatUp {
+    0% { opacity: 1; transform: translateY(0) rotate(0deg); }
+    100% { opacity: 0; transform: translateY(-120px) rotate(360deg); }
+}
+.key {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #ffcc5c, #1dd1a1);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.key:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Magical Glow Animation */
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #ff6b6b; }
+    50% { box-shadow: 0 0 25px #ffcc5c; }
+    100% { box-shadow: 0 0 10px #1dd1a1; }
+}
+
+.key {
+    animation: glow 2s infinite alternate;
+}
+
+/* Sparkles on Click */
+.key:active {
+    background: linear-gradient(45deg, #1dd1a1, #ffcc5c, #ff6b6b);
+    transform: scale(0.95);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.key {
+    animation: float 3s infinite ease-in-out;
+}
+/* Rotate Animation (Modified to Stop After One Rotation) */
+@keyframes rotateKey {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Class to trigger rotation once */
+.rotate-once {
+    animation: rotateKey 1s linear forwards; /* Runs once and stops */
+}
