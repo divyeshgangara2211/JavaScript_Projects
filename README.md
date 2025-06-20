@@ -43,9 +43,7 @@ A simple yet captivating app that changes the background color to a random value
 Technologies Used
 
 HTML
-
 CSS
-
 JavaScript
 
 Contributing
